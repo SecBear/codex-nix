@@ -2,7 +2,7 @@
 
 Nix flake for [OpenAI Codex CLI](https://github.com/openai/codex) (the Rust CLI, `codex-rs`) — an AI coding agent for your terminal.
 
-Packages the latest official pre-built binaries daily so you can use `codex` declaratively on NixOS, nix-darwin, and Home Manager without building from source.
+Packages the latest official pre-built binaries so you can use `codex` declaratively on NixOS, nix-darwin, and Home Manager without building from source.
 
 ## Quick Start
 
@@ -54,7 +54,7 @@ nix profile install github:SecBear/codex-nix
 
 ## Updates
 
-CI checks for new releases daily at 08:00 UTC. When a new version is detected,
+CI checks for new releases hourly. When a new version is detected,
 it fetches updated hashes for all platforms, opens a PR, and auto-merges once CI passes.
 
 To update manually:
