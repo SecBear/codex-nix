@@ -4,6 +4,8 @@
   fetchurl,
   autoPatchelfHook,
   zlib,
+  libcap,
+  openssl,
 }:
 
 let
@@ -46,6 +48,8 @@ stdenv.mkDerivation {
   buildInputs = lib.optionals isLinux [
     stdenv.cc.cc.lib
     zlib
+    libcap
+    openssl
   ];
 
   dontConfigure = true;
